@@ -2,3 +2,8 @@ auth.json
 node_modules
 .env
 start -Donuts.bat
+Canfig.json
+cermmands/help.js
+cermmands/ping.js
+Shadow.js
+start - Shadow.bat
