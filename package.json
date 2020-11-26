@@ -1,0 +1,21 @@
+{
+  "name": "mysticsbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Bartender.js",
+  "dependencies": {
+    "discord-paginationembed": "^2.1.0",
+    "discord.js": "^12.5.0",
+    "fs": "^0.0.1-security",
+    "fs-extra": "^9.0.1",
+    "jimp": "^0.16.1",
+    "moment": "^2.29.1",
+    "moment-duration-format": "^2.3.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mystic",
+  "license": "ISC"
+}
