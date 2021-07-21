@@ -1,0 +1,16 @@
+const DDEmbed = require("../../structures/DDEmbed.struct");
+const DDCommand = require("../../structures/DDCommand.struct");
+
+const { canCook } = require("../../permissions");
+const { WorkerInfo, MonthlyInfo } = require("../../sequelize");
+module.exports =
+	new DDCommand()
+		.setName("name")
+		.addShortcuts("shortcuts")
+		.addAliases("aliases")
+		.setDescription("desc.")
+		.setPermissions(canCook)
+		.setFunction(async(message, args, client) => {
+			
+		});
+
