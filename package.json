@@ -23,7 +23,7 @@
 		"r2": "^2.0.1",
 		"sequelize": "^6.5.0",
 		"string-similarity": "^2.0.0",
-		"underscore": "^1.9.1",
+		"underscore": "^1.12.1",
 		"wilson-score": "^1.0.0"
 	},
 	"scripts": {
