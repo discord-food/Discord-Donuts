@@ -279,31 +279,6 @@ const applicationAlert = async(client, text, channel = channels.applicationChann
 	}
 	client.channels.get(channel).send(embed);
 };
-const updateWebsites = client => {
-	if (client.user.id !== "335637950044045314") return;
-	util.log("[Discord] Updating websites...");
-	post(`https://discordbots.org/api/bots/335637950044045314/stats`)
-		.set("Authorization", botlists.discordbotsToken)
-		.send({ server_count: client.guilds.size })
-		.then(util.log("[Discord] Updated discordbots.org stats."))
-		.catch(e => util.log("[Discord] ", e.body));
-	post(`https://bots.discord.pw/api/bots/335637950044045314/stats`)
-		.set("Authorization", botlists.discordpwToken)
-		.send({ server_count: client.guilds.sizet })
-		.then(util.log("[Discord] Updated bots.discord.pw stats."))
-		.catch(e => util.log("[Discord] ", e.body));
-	post(`https://bots.discordlist.net/api`)
-		.set("Authorization", botlists.discordlistToken)
-		.send({ server_count: client.guilds.size })
-		.then(util.log("[Discord] Updated bots.discordlist.net stats."))
-		.catch(e => util.log("[Discord] ", e.body));
-	post(`https://listcord.com/api/bot/335637950044045314/guilds`)
-		.set("Content-Type", "application/json")
-		.set("token", botlists.listcordToken)
-		.send({ guilds: client.guilds.size })
-		.then(util.log("[Discord] Updated Listcord stats."))
-		.catch(e => util.log("[Discord] ", e.body));
-};
 
 class Item {
 	constructor(id, name, description, hint, { price = 0, limit = Infinity, showInShop = true, canUse = true, disappearAfterUse = true } = {}) {
