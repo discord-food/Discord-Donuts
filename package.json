@@ -21,7 +21,7 @@
 		"pretty-ms": "^4.0.0",
 		"query-string": "^6.8.2",
 		"r2": "^2.0.1",
-		"sequelize": "^6.5.0",
+		"sequelize": "^6.29.0",
 		"string-similarity": "^2.0.0",
 		"underscore": "^1.12.1",
 		"wilson-score": "^1.0.0"
